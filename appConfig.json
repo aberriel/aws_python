@@ -1,0 +1,64 @@
+{
+	"aws":
+	{
+		"awsAuth":
+		{
+			"access_key": "your_access_key_here",
+			"secret_access_key": "your_secret_access_key_here",
+			"region": "us-east-1"
+		},
+		"cloudwatch": {},
+		"kinesis":
+		{
+			"stream_name": "your_stream_name",
+			"min_shard_number": 2
+		},
+		"redshift":
+		{
+			"url": "your_redshift_url",
+			"port": 5439,
+			"schema": "your_schema_name",
+			"user": "your_redshift_user",
+			"password": "your_redshift_password"
+		},
+		"s3":
+		{
+			"buckets_for_analysis":
+			[
+			    {
+			    	"bucket": "bucket_name",
+			    	"folderList":
+			    	[
+			    	    "folder1",
+			    	    "folder2",
+			    	    "folder3"
+			    	]
+			    }
+			]
+		}
+	},
+	"mail":
+	{
+		"host": "smtp.gmail.com",
+		"port": 587,
+		"ssl": 1,
+		"user": "your_email_user",
+		"password": "your_email_password",
+		"mailFrom": "mailfrom@mailserver.com",
+		"mailTo": "mailto@mailserver.com"
+	},
+	"app":
+	{
+		"app_name": "AWS Library",
+		"company": "Anselmo TI",
+		"version": "1.0.0",
+		"developer_mail": "anselmo.lira1@gmail.com",
+		"build_date": "",
+		"time_limit_for_execution": 18000
+	},
+	"log":
+	{
+		"file_name_preffix": "ws_",
+		"file_name_suffix": ".log"
+	}
+}
